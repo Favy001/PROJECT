@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QueenPin Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="logo">f</div>
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Search QueenPin Media" />
+        </div>
+      </div>
+
+      <nav class="top-icons" aria-label="Main navigation">
+        <button class="nav-item active" aria-label="Home">⌂</button>
+        <button class="nav-item" aria-label="Friends">👥</button>
+        <button class="nav-item" aria-label="Videos">▶</button>
+        <button class="nav-item" aria-label="Marketplace">🛍</button>
+        <button class="nav-item" aria-label="Notifications">🔔</button>
+      </nav>
+
+      <div class="topbar-right">
+        <div class="profile-pill">
+          <div class="avatar small gradient-a">A</div>
+          <span>Ava</span>
+        </div>
+        <button class="action-btn" aria-label="Create">＋</button>
+        <button class="action-btn" aria-label="Menu">☰</button>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="left-panel">
+        <div class="card profile-card">
+          <div class="cover"></div>
+          <div class="profile-body">
+            <div class="avatar big gradient-b">A</div>
+            <h3>Ava Johnson</h3>
+            <p>Product Designer • Building communities</p>
+          </div>
+          <div class="mini-metrics">
+            <div><strong>12.4K</strong><span>Followers</span></div>
+            <div><strong>458</strong><span>Posts</span></div>
+          </div>
+        </div>
+
+        <div class="card shortcuts">
+          <h4>Shortcuts</h4>
+          <ul>
+            <li>🎉 Events</li>
+            <li>🏆 Leaderboard</li>
+            <li>📚 Saved</li>
+            <li>🧠 Courses</li>
+          </ul>
+        </div>
+
+        <div class="card monetization-box">
+          <div class="monetize-header">
+            <span class="pill green">Earn</span>
+            <h4>Support the community</h4>
+          </div>
+          <p>Help fund creators, events, and safer online experiences.</p>
+          <a id="paypalLink" class="paypal-button" href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID" target="_blank" rel="noreferrer">
+            PayPal: paypal.me/yourbrand
+          </a>
+          <small>Replace the link with your real PayPal account to start collecting donations.</small>
+        </div>
+      </aside>
+
+      <section class="feed-column">
+        <div class="stories card">
+          <div class="story-item gradient-b">
+            <div class="story-avatar">A</div>
+            <span>Ava</span>
+          </div>
+          <div class="story-item gradient-c">
+            <div class="story-avatar">M</div>
+            <span>Mark</span>
+          </div>
+          <div class="story-item gradient-d">
+            <div class="story-avatar">S</div>
+            <span>Sofia</span>
+          </div>
+          <div class="story-item gradient-e">
+            <div class="story-avatar">J</div>
+            <span>Jay</span>
+          </div>
+        </div>
+
+        <div class="composer card">
+          <div class="composer-top">
+            <div class="avatar small gradient-a">A</div>
+            <input type="text" placeholder="Share something today..." />
+          </div>
+          <div class="composer-actions">
+            <button>📷 Photo</button>
+            <button>🎬 Video</button>
+            <button>😊 Feeling</button>
+            <button class="primary">Post</button>
+          </div>
+        </div>
+
+        <article class="post card">
+          <div class="post-header">
+            <div class="user-meta">
+              <div class="avatar small gradient-c">M</div>
+              <div>
+                <h4>Mark Turner</h4>
+                <span>2 hours ago</span>
+              </div>
+            </div>
+            <button class="dot-btn">•••</button>
+          </div>
+          <p>Launching a new community dashboard this week. Building better digital spaces for creators and brands.</p>
+          <div class="post-image scenic"></div>
+          <div class="post-stats">
+            <span>❤️ 2.4K</span>
+            <span>💬 318</span>
+            <span>↻ 84</span>
+          </div>
+          <div class="post-actions">
+            <button>Like</button>
+            <button>Comment</button>
+            <button>Share</button>
+          </div>
+        </article>
+
+        <article class="post card">
+          <div class="post-header">
+            <div class="user-meta">
+              <div class="avatar small gradient-d">S</div>
+              <div>
+                <h4>Sofia Lee</h4>
+                <span>Yesterday</span>
+              </div>
+            </div>
+            <button class="dot-btn">•••</button>
+          </div>
+          <p>Mentoring 30 founders this month. Amazing what a supportive community can build.</p>
+          <div class="mood-row">
+            <div class="mood-box">📈 7.8% growth</div>
+            <div class="mood-box">🎯 Better reach</div>
+            <div class="mood-box">🤝 Strong network</div>
+          </div>
+          <div class="post-stats">
+            <span>👍 1.9K</span>
+            <span>💬 245</span>
+            <span>↻ 60</span>
+          </div>
+          <div class="post-actions">
+            <button>Like</button>
+            <button>Comment</button>
+            <button>Share</button>
+          </div>
+        </article>
+      </section>
+
+      <aside class="right-panel">
+        <div class="card whatsapp-card">
+          <div class="wa-header">
+            <div class="user-meta">
+              <div class="avatar small gradient-e">C</div>
+              <div>
+                <h4>Community Chat</h4>
+                <span>Online</span>
+              </div>
+            </div>
+            <button class="dot-btn">⋯</button>
+          </div>
+
+          <div class="chat-window" id="chatWindow">
+            <div class="msg incoming">Hi team! Anyone joining the live webinar tonight?</div>
+            <div class="msg outgoing">Yes, I’m in. It’s on at 8 PM.</div>
+            <div class="msg incoming">Perfect. We’ll also share the recordings after.</div>
+            <div class="msg outgoing">Love this community energy.</div>
+          </div>
+
+          <div class="wa-input">
+            <input id="chatInput" type="text" placeholder="Type a message" />
+            <button id="sendMessage">Send</button>
+          </div>
+        </div>
+
+        <div class="card contact-box">
+          <h4>Contacts</h4>
+          <ul>
+            <li><span class="avatar xsmall gradient-b">N</span> Nina</li>
+            <li><span class="avatar xsmall gradient-c">T</span> Theo</li>
+            <li><span class="avatar xsmall gradient-d">L</span> Leah</li>
+            <li><span class="avatar xsmall gradient-e">R</span> Ryan</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
